@@ -1,3 +1,10 @@
+
+A build can be found as boomkop3/docker-copyedit on the docker hub.
+
+To run: `docker run --rm -v /var/run/docker.sock:/var/run/docker.sock` boomkop3/docker-copyedit [arguments]`
+
+# tags and previous dev's writing
+
 [![Style Check](https://github.com/gdraheim/docker-copyedit/actions/workflows/stylecheck.yml/badge.svg?event=push)](https://github.com/gdraheim/docker-copyedit/actions/workflows/stylecheck.yml)
 [![Type Check](https://github.com/gdraheim/docker-copyedit/actions/workflows/typecheck.yml/badge.svg?event=push)](https://github.com/gdraheim/docker-copyedit/actions/workflows/typecheck.yml)
 [![Code Coverage](https://img.shields.io/badge/60%20test-75%25%20coverage-brightgreen)](https://github.com/gdraheim/docker-copyedit/blob/master/docker-copyedit-tests.py)
