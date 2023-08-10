@@ -1,9 +1,7 @@
-FROM alpine as docker
-# adds runc, containerd which are overkill for docker-cli
-RUN apk add --no-cache docker
-
-FROM python:2-alpine
-ENTRYPOINT ["docker-copyedit.py"]
-RUN apk add --no-cache libltdl
-COPY --from=docker /usr/bin/docker /usr/bin/docker
-COPY docker-copyedit*.py /usr/local/bin/
+FROM debian
+RUN apt-get -y update
+RUN apt-get -y install docker.io python3 
+VOLUME /var/run/docker.sock
+copy ./ /copyedit
+WORKDIR /copyedit
+ENTRYPOINT ["python3", "docker-copyedit.py"]
