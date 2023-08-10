@@ -1,7 +1,11 @@
 
 A build can be found as boomkop3/docker-copyedit on the docker hub.
 
-To run: `docker run --rm -v /var/run/docker.sock:/var/run/docker.sock` boomkop3/docker-copyedit [arguments]`
+To run: 
+```bash
+docker run --rm -v /var/run/docker.sock:/var/run/docker.sock boomkop3/docker-copyedit [arguments]
+docker run --rm -v /var/run/docker.sock:/var/run/docker.sock boomkop3/docker-copyedit --help
+```
 
 # tags and previous dev's writing
 
